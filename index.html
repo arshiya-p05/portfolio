@@ -1,70 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arshiya Parveen Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1><span>ARSHIYA</span> PARVEEN</h1>
-      <div class="contact">
-        <p>📞 8688006508</p>
-        <p>📧 arshiyap017@gmail.com</p>
-        <p>📍 Hyderabad</p>
-      </div>
-    </header>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        Aspiring computer science professional with a solid foundation in programming, web development, and problem-solving. 
-        Currently building skills in data structures, algorithms, and modern technologies with a focus on creating efficient 
-        and secure digital solutions. Passionate about continuous learning and innovation in the tech space.
-      </p>
-    </section>
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="tags">
-        <span>MS-Windows</span>
-        <span>ORACLE</span>
-        <span>MYSQL</span>
-        <span>C++</span>
-        <span>Java</span>
-        <span>Python</span>
-      </div>
-    </section>
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: #fff;
+  padding: 20px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 95vh;
+  border-radius: 8px;
+}
 
-    <section class="education">
-      <h2>Education</h2>
-      <p><strong>GNITS, Hyderabad</strong><br>B.Tech in Computer Science and Engineering (2024–2027)</p>
-      <p><strong>GIOE, Hyderabad</strong><br>Diploma in CSE (2021–2024), CGPA: 9.81</p>
-    </section>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #4a693c;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
 
-    <section class="languages">
-      <h2>Language</h2>
-      <div class="tags">
-        <span>Hindi</span>
-        <span>English</span>
-        <span>Telugu</span>
-      </div>
-    </section>
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <h3>Blockchain-Based Healthcare Data Security and Privacy</h3>
-      <p>
-        This project aims to enhance the security and privacy of healthcare data by implementing a blockchain-based framework. 
-        It addresses the limitations of traditional centralized systems by introducing a decentralized, tamper-proof architecture 
-        for storing and sharing electronic medical records. Using cryptographic techniques such as hashing, digital signatures, 
-        and smart contracts, the system ensures data integrity, secure authentication, and controlled access. The use of private 
-        blockchain networks and distributed ledger technology allows for transparent and trustworthy interactions between 
-        patients, providers, and insurers, while maintaining strict privacy standards.
-      </p>
-    </section>
-  </div>
-</body>
-</html>
+header h1 span {
+  color: #a52126;
+}
+
+.contact p {
+  margin: 2px 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+section {
+  margin-top: 25px;
+}
+
+.about {
+  background-color: #4a693c;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+h2 {
+  color: #2b3e1d;
+  border-bottom: 1px solid #4a693c;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  display: inline-block;
+  background: none;
+  border: 2px solid #4a693c;
+  color: #4a693c;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.projects h3 {
+  margin-top: 10px;
+  color: #000;
+}
